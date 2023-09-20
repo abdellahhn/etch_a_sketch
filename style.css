@@ -1,14 +1,22 @@
-.container {
-    display : flex;
-    flex-wrap: wrap;
-    width: 400px;
+/* Apply styles to the body and container */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 2px; /* Adjust the gap as needed */
+    max-width: 100%; /* Ensure the container does not exceed viewport width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding to keep the squares away from the edges */
+}
+
+/* Style the grid squares */
 .square {
-    width :calc(25% - 4px);
-    height: 0;
-    padding-bottom: calc(25% - 4px);
-    margin: 2px;
+    width: 100%; /* Each square occupies the entire grid cell */
+    padding-bottom: 100%; /* Maintain a square aspect ratio */
     background-color: #3498db;
     border: 2px solid #2980b9;
     box-sizing: border-box;
