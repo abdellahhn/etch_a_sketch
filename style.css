@@ -1,0 +1,15 @@
+.container {
+    display : flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.square {
+    width :calc(25% - 4px);
+    height: 0;
+    padding-bottom: calc(25% - 4px);
+    margin: 2px;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    box-sizing: border-box;
+}
